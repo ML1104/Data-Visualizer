@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Data Visualizer</title>
 </head>
-<body>
-    <h1>Hello</h1>
 
+<body>
     <div class="container">
         <div class="channel">
             <div class="graph">
@@ -17,7 +17,15 @@
                     <div>10</div>
                     <div>0</div>
                 </div>
-                <div class="axis">
+                <div class="axis" id="upperAxis">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -31,7 +39,15 @@
                     <div>10</div>
                     <div>0</div>
                 </div>
-                <div class="axis">
+                <div class="axis" id="lowerAxis">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -40,5 +56,17 @@
             </div>
         </div>
     </div>
+    <div class="controls">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <p></p>
+        <label for="changeInterval" id="setInterval">Set Interval (Miliseconds)</label>
+        <input type="number" name="changeInterval" id="changeInterval" value="1000">
+        <label for="changeBarCount" id="setBarCount">Set Bar Count (11 Max)</label>
+        <input type="number" name="changeBarCount" id="changeBarCount" value="11">
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
