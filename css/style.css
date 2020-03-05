@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body .container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+}
+body .container .channel {
+  width: 100%;
+  height: 300px;
+  border: 1px solid red;
+}
+body .container .channel .graph {
+  padding: 5px;
+  display: flex;
+  height: 95%;
+}
+body .container .channel .graph .range {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 20px;
+}
+body .container .channel .graph .axis {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 80%;
+  display: flex;
+  justify-content: left;
+}
+body .container .channel .graph .axis .bar {
+  width: 10%;
+  height: 99%;
+  border: 1px solid black;
+  background-color: blue;
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
